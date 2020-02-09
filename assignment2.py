@@ -66,7 +66,7 @@ def callback():
         if isinstance(event.message, FileMessage):
             handle_FileMessage(event)
         if isinstance(event.message, StickerMessage):
-            handle_TextMessage(event)
+            handle_StickerMessage(event)
 
         if not isinstance(event, MessageEvent):
             continue
